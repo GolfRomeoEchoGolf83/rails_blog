@@ -1,8 +1,10 @@
 <h1>Blog</h1>
 
 <h2>Liste des articles du blog</h2>
+
   <% @articles.each do |article| %>
-    <p><%= article.title %></p>
+    <p><a href="/articles/<%= article.id %>"><%= article.title %></a></p>
   <% end %>
+
 
 <p>Copyright © Gregory Decroix</p>
